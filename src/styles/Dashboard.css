@@ -1,0 +1,208 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background: #f0f4f8; /* same as auth-image bg */
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  width: 260px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard-sidebar h2 {
+  color: #1f2937;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+/* Nav */
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #374151;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links li:hover {
+  background: #f0f4f8;
+  transform: translateX(5px);
+}
+
+/* Logout button */
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6; /* same button blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #2563eb;
+}
+
+/* Main */
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card (same style as auth form) */
+.dashboard-card {
+  width: 80%;
+  max-width: 450px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.dashboard-card h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.dashboard-card p {
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+/* Info rows */
+.info {
+  background: #f9fafb;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.records-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.records-card h1 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.record-item {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.record-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.record-item strong {
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.record-info {
+  margin: 5px 0;
+  color: #4b5563;
+}
+
+.record-buttons {
+  margin-top: 10px;
+}
+
+.record-buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.record-buttons button.delete-btn {
+  background: #ef4444;
+  color: white;
+  margin-right: 8px;
+}
+
+.record-buttons button.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.record-buttons button.status-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.record-buttons button.status-btn:hover {
+  background: #2563eb;
+}
+.delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+/* Pending delete */
+.delete-btn:not(.approve-payment) {
+  background: #ef4444;
+}
+
+.delete-btn:not(.approve-payment):hover {
+  background: #b91c1c;
+}
+
+/* Completed / Approve Payment */
+.delete-btn.approve-payment {
+  background: #10b981; /* green */
+}
+
+.delete-btn.approve-payment:hover {
+  background: #059669;
+}
