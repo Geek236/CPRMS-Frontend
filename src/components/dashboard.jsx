@@ -84,7 +84,7 @@ const Dashboard = () => {
   const handleRegisterCar = async () => {
     setMessage("");
     try {
-      const res = await axios.post(`${API_URL}/Cars/registerCa`, {
+      const res = await axios.post(`${API_URL}/Cars/registerCar`, {
         PlateNumber: plateNumber,
         CarType: carType,
         FullName: fullName,
@@ -314,3 +314,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
