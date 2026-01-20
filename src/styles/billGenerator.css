@@ -1,0 +1,127 @@
+
+.bill-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+
+.bill-page h1 {
+  margin-bottom: 20px;
+  color: #111;
+  font-size: 28px;
+  text-align: center;
+}
+
+.bill-card {
+  width: 400px;
+  background: white;
+  padding: 20px 30px;
+  border: 1px dashed #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  position: relative;
+}
+
+.bill-card::before {
+  content: "💳 CPRMS";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.bill-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+
+.bill-card p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+
+.bill-card .total {
+  font-weight: bold;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.bill-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+.dashboard-btn {
+  padding: 10px 20px;
+  background: #6b7280; /* gray */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.dashboard-btn:hover {
+  background: #4b5563;
+}
+
+
+.download-btn {
+  padding: 10px 20px;
+  background: #3b82f6; /* blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #2563eb;
+}
+
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media (max-width: 500px) {
+  .bill-card {
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .bill-page h1 {
+    font-size: 24px;
+  }
+
+  .bill-card h2 {
+    font-size: 18px;
+  }
+}

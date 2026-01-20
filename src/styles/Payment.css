@@ -1,0 +1,143 @@
+.payment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f3f4f6;
+  font-family: 'Inter', sans-serif;
+}
+
+.payment-card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.payment-card h1 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.payment-card p {
+  margin: 10px 0;
+  color: #4b5563;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.payment-form input:focus {
+  border-color: #3b82f6;
+}
+
+.payment-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.payment-form button:hover:not(:disabled) {
+  background: #059669;
+}
+
+.payment-form button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+}
+
+.payment-success {
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.payment-success button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-success button:hover {
+  background: #2563eb;
+}
+.payment-error {
+  color: #ef4444; /* red */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.payment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #f0f4f8;
+}
+
+.payment-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.payment-form button {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-form button:hover {
+  background: #2563eb;
+}
+
+.payment-error {
+  color: #ef4444;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.payment-success button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
